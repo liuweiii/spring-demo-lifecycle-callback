@@ -8,11 +8,11 @@ import org.springframework.beans.factory.InitializingBean;
 public class WithInitializingBean implements InitializingBean{
 
     public WithInitializingBean(){
-        System.out.println("in withInitializingBean initialization.");
+        System.out.println("[InitializingBean][in]initialization");
     }
 
     @Override
     public void afterPropertiesSet(){
-        System.out.println("after bean initialization with interface InitializingBean to perform.");
+        System.out.println("[InitializingBean][after]initialization");
     }
 }
