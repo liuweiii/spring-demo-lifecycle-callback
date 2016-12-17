@@ -8,11 +8,14 @@ import org.springframework.beans.factory.InitializingBean;
 public class WithXMLBean{
 
     public WithXMLBean(){
-        System.out.println("[XML][in]initialization");
+        System.out.println("[init][XML][in]");
     }
 
     public void afterInit(){
-        System.out.println("[XML][after]initialization");
+        System.out.println("[init][XML][after]");
     }
 
+    public void afterDestroy(){
+        System.out.println("[destroy][XML][after]");
+    }
 }

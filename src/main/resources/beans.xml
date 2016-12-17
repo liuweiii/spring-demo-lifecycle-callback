@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="withInitializingBean" class="com.example.lifecycle.afterinit.WithInitializingBean"/>
-    <bean id="withXMLBean" class="com.example.lifecycle.afterinit.WithXMLBean" init-method="afterInit"/>
+    <bean id="withInitializingBean" class="com.example.lifecycle.afterinit.WithJavaInterface"/>
+    <bean id="withXMLBean" class="com.example.lifecycle.afterinit.WithXMLBean" init-method="afterInit"
+          destroy-method="afterDestroy"/>
 </beans>
