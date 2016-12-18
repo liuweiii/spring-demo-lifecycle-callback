@@ -14,5 +14,6 @@ public class DemoApplication {
 
         ClassPathXmlApplicationContext context_default = new ClassPathXmlApplicationContext(new String[]{"beans-default.xml"});
         context_default.close();
+
     }
 }
